@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Prak3_3103</string>
+    <string name="app_reg">Regsiter</string>
+    <string name="app_login">Login</string>
+    <string name="app_usn">Username</string>
+    <string name="app_pw">Password</string>
+    <string name="app_konfirm">Konfirmasi Password</string>
+    <string name="app_isiankonfirm">Konfirmasi password</string>
+    <string name="app_inptusn">Masukkan username</string>
+    <string name="app_inptpw">Masukkan password</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_daftar">Daftar</string>
+</resources>
