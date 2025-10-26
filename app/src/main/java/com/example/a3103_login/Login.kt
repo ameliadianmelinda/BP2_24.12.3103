@@ -30,8 +30,8 @@ class Login : AppCompatActivity() {
             if (username.isEmpty() || password.isEmpty()) {
                 Toast.makeText(this, "Isi username dan password dulu", Toast.LENGTH_SHORT).show()
             } else {
-                // Intent ke Dashboard
-                val pindah = Intent(this, Dashboard::class.java)
+                // Intent ke HomeActivity (bukan Dashboard lagi)
+                val pindah = Intent(this, HomeActivity::class.java)
                 pindah.putExtra("nama", username)
                 startActivity(pindah)
             }

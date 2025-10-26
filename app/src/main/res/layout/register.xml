@@ -6,72 +6,135 @@
     android:padding="20dp">
 
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:src="@drawable/logoamikom"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:layout_marginBottom="20dp" />
+        android:layout_marginBottom="10dp">
+    </ImageView>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="@string/app_reg"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_marginBottom="20dp" />
+        android:layout_marginBottom="20dp">
+    </TextView>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/app_usn" />
+        android:text="@string/app_usn">
+    </TextView>
 
     <EditText
         android:id="@+id/et_reg_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/app_inptusn"
-        android:inputType="text" />
-
+        android:inputType="text">
+    </EditText>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_pw"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp">
+    </TextView>
 
     <EditText
         android:id="@+id/et_reg_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/app_inptpw"
-        android:inputType="textPassword" />
+        android:inputType="textPassword">
+    </EditText>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_konfirm"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp">
+    </TextView>
 
     <EditText
         android:id="@+id/et_reg_ulangi_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/app_isiankonfirm"
-        android:inputType="textPassword" />
+        android:inputType="textPassword">
+    </EditText>
 
-    <Button
-        android:id="@+id/btn_register"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/app_reg"
-        android:layout_marginTop="20dp" />
+        android:text="@string/app_kel"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="-10dp">
+    </TextView>
+
+    <RadioGroup
+        android:id="@+id/rg_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_pria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kel1"
+            android:layout_marginBottom="-20dp">
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb_wanita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kel2">
+        </RadioButton>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_domisili"
+        android:layout_marginBottom="-10dp">
+    </TextView>
+
+    <Spinner
+        android:id="@+id/spinner_domisili"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:entries="@array/daftar_kota">
+    </Spinner>
+
+    <CheckBox
+        android:id="@+id/cb_terms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ketentuan"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="-10dp">
+    </CheckBox>
+
+    <Button
+        android:id="@+id/btn_submit_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_daftar"
+        android:layout_marginTop="20dp">
+    </Button>
 
     <Button
         android:id="@+id/btn_back_to_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Kembali ke Login" />
+        android:text="@string/btn_login">
+    </Button>
 
 </LinearLayout>
